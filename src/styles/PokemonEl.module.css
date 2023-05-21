@@ -1,0 +1,23 @@
+.backButton {
+    font-size: calc(1.7vw + 1.5em);
+    margin-top: 4vw;
+}
+
+.pokemonName {
+    font-size: calc(1.7vw + 2em);
+}
+
+.pokemonStats {
+    font-size: calc(0.7vw + 1em);
+}
+
+.addNickButton {
+    cursor: pointer;
+    height: calc(3em + 0.5vw);
+    background: linear-gradient(45deg, rgba(195,245,255, 1) 0%, rgba(0, 212, 255, 1) 28%, rgb(99, 99, 255) 100%);
+    width: 197px;
+}
+
+.addNickButton:hover {
+    background: linear-gradient(45deg, rgb(15, 192, 227) 0%, rgba(0, 212, 255, 1) 28%, rgb(23, 23, 185) 100%);
+}

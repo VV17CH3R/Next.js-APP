@@ -1,0 +1,37 @@
+.next {
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    background: url(../UI/images/next.png);
+    background-size: cover;
+    margin-left: 3vw;
+}
+
+.back {
+    background: url(../UI/images/back.png);
+    background-size: cover;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    margin-right: 3vw;
+}
+
+.search {
+    cursor: pointer;
+    height: calc(3em + 0.5vw);
+    background: linear-gradient(45deg, rgba(195,245,255, 1) 0%, rgba(0, 212, 255, 1) 28%, rgb(99, 99, 255) 100%);
+
+}
+
+.search:hover {
+    background: linear-gradient(45deg, rgb(15, 192, 227) 0%, rgba(0, 212, 255, 1) 28%, rgb(23, 23, 185) 100%);
+}
+
+.inputContainer {
+    height: calc(3em + 0.5vw);
+}
+
+.inputText{
+    font-size: calc(1.5em + 0.2vw);
+    background: linear-gradient(45deg, rgba(195,245,255, 1) 0%, rgba(0, 212, 255, 1) 28%, rgb(99, 99, 255) 100%);
+}
