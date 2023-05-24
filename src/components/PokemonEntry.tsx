@@ -18,7 +18,7 @@ export default function PokemonEntry({ name }: { name: string }) {
                             {pokemon.name}
                         </h1>
                         <Image
-                            src={pokemon.sprites.other["official-artwork"].front_default}
+                            src={pokemon.sprites.other["oficial=artwork"].front_default}
                             alt={"Pokemon: " + pokemon.name}
                             width={200}
                             height={200}
