@@ -19,7 +19,7 @@
 .search {
     cursor: pointer;
     height: calc(3em + 0.5vw);
-    background: linear-gradient(45deg, rgba(195,245,255, 1) 0%, rgba(0, 212, 255, 1) 28%, rgb(99, 99, 255) 100%);
+    background: linear-gradient(45deg, white, rgb(182, 182, 182) 28%, rgb(255, 255, 255) 100%);
 
 }
 

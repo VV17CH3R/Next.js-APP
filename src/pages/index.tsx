@@ -21,7 +21,7 @@ export default function Home() {
 
 	return (
 		<div>
-			<h1 className="text-center mb-4">All Pokemon&apos;s by VV17CH3R</h1>
+			<h1 className="text-center mb-4">Все покемоны от VV17CH3R&apos;а</h1>
 
 			<InputGroup className={`${styles.inputContainer} mb-4`}>
 				<Link href={"/" + pokeRequest}>
@@ -29,19 +29,19 @@ export default function Home() {
 						className={`${styles.search}`}
 						id="pokeRequest"
 					>
-						Search
+						Искать
 					</InputGroup.Text>
 				</Link>
 				<Form.Control
 					className={styles.inputText}
-					placeholder="Find pokemon..."
+					placeholder="Найти покемона..."
 					aria-label="pokeRequest"
 					aria-describedby="pokeRequest"
 					onChange={e => setPokeRequest(e.target.value)}
 				/>
 			</InputGroup>
 
-			<Row xs={1} sm={2} lg={3} xl={4} className="g-4">
+			<Row xs={2} sm={2} lg={3} xl={4} className="g-4">
 				{data?.results.map(el => (
 					<Col key={el.name}>
 						<PokemonEntry name={el.name}></PokemonEntry>

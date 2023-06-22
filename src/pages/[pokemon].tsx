@@ -33,10 +33,10 @@ export default function PokemonDetailsPage() {
             <div className="d-flex flex-column align-items-center">
                 {pokemonLoading && <Spinner animation="grow" />}
                 {pokemon === null &&
-                    <p className={styles.pokemonName}>Pokemon not found
+                    <p className={styles.pokemonName}>Покемон не найден
                         <div>
                             <Link href="/" className="link-light">
-                                Try again 
+                                Попробуйте снова
                             </Link>
                         </div>
                     </p>}
@@ -52,28 +52,28 @@ export default function PokemonDetailsPage() {
                         <div className="d-inline-block mt-2">
                             <div className={styles.pokemonStats}>
                                 <strong>
-                                    Types:{" "}
+                                    Тип:{" "}
                                 </strong>
                                 {pokemon.types.map(el => el.type.name).join(", ")}
-                                <div><strong>Height: </strong> {pokemon.height * 10} cm</div>
-                                <div><strong>Weight: </strong> {pokemon.weight / 10} kg</div>
+                                <div><strong>Высота: </strong> {pokemon.height * 10} cm</div>
+                                <div><strong>Вес: </strong> {pokemon.weight / 10} kg</div>
                             </div>
                         </div>
                         <div className={styles.backButton}>
                             <Link href="/" className="link-light">
-                                Comback to list
+                                Вернуться к списку
                             </Link>
                         </div>
                         <Form onSubmit={submitNickname} className="mt-4">
                             <Form.Group 
                                 controlId="pokemonMutateInput"
                                 className="mb-3">
-                                <Form.Label>Give this pokemon a nickname</Form.Label>
-                                <Form.Control name="nickname" placeholder="ex. Big Jonny...">
+                                <Form.Label>Дайте свое имя этому покемону</Form.Label>
+                                <Form.Control name="nickname" placeholder="Например: Родиошка...">
 
                                 </Form.Control>
                             </Form.Group>
-                            <Button type="submit" className={styles.addNickButton} >Add nickname</Button>
+                            <Button type="submit" className={styles.addNickButton} >Добавить имя</Button>
                         </Form>
                     </>
                 }
